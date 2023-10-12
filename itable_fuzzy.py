@@ -2,6 +2,15 @@ import pefile
 import ssdeep
 import sys
 
+docstring = '''
+Name: PE Import Table Fuzzy Hash calculator
+Description: Calculates the Fuzzy Hash (ssdeep) of a PE files import table.
+'''
+
+help_message = f'''
+Usage: {sys.argv[0]} <path_to_pe>'''
+
+
 def get_import_table_data(pe):
 
     imports_data = []
